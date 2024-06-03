@@ -2,12 +2,14 @@
 #define led_verde 11
 #define led_am 12
 #define led_verde2 10
+#define led_verm 13
 
 void setup()
 {
   pinMode(led_verde, OUTPUT);
   pinMode(led_am, OUTPUT);
   pinMode(led_verde2, OUTPUT);
+  pinMode(led_verm, OUTPUT);
 }
 
 void loop()
@@ -49,17 +51,32 @@ void loop()
  
  
   //Led verde 2
-  digitalWrite(13, HIGH);//liga led 
+  digitalWrite(led_verde2, HIGH);//liga led 
   delay(200);//espera 200ms
   
-  digitalWrite(13, LOW);//apaga led
+  digitalWrite(led_verde2, LOW);//apaga led
   delay(200);//espera 200ms
   
-  digitalWrite(13, HIGH);//liga led
+  digitalWrite(led_verde2, HIGH);//liga led
   delay(200);//espera 200ms
   
-  digitalWrite(13, LOW);//apaga o led
+  digitalWrite(led_verde2, LOW);//apaga o led
   delay(1000);//espera 1000ms
 
+
+
+
+  //Led vermelho
+  digitalWrite(led_verm, HIGH); //Acende led vemelho
+  delay(2000); //Espera 2 segundos
+
+  digitalWrite(led_verm, LOW); //Apaga led vermelho
+  delay(2000); //Espera 2 segundos
+
+  digitalWrite(led_verm, HIGH); //Acende led vemelho
+  delay(2000); //Espera 2 segundos
+
+  digitalWrite(led_verm, LOW); //Apaga led vermelho
+  delay(2000); //Espera 2 segundos
 
 }
