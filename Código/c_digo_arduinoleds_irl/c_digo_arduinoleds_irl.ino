@@ -3,6 +3,7 @@
 #define led_am 12
 #define led_verde2 10
 #define led_verm 13
+#define led_verm2 9
 
 void setup()
 {
@@ -10,6 +11,7 @@ void setup()
   pinMode(led_am, OUTPUT);
   pinMode(led_verde2, OUTPUT);
   pinMode(led_verm, OUTPUT);
+  pinMode(led_verm2, OUTPUT);
 }
 
 void loop()
@@ -78,5 +80,22 @@ void loop()
 
   digitalWrite(led_verm, LOW); //Apaga led vermelho
   delay(2000); //Espera 2 segundos
+
+
+
+  //Led vermelho 2
+  digitalWrite(led_verm2, HIGH); //Acende o segundo led vemelho
+  delay(1000); //Espera 1 segundos
+
+  digitalWrite(led_verm2, LOW); //Apaga o segundo led vermelho
+  delay(1500); //Espera 1,5 segundos
+
+  digitalWrite(led_verm2, HIGH); //Acende o segundo led vemelho
+  delay(1000); //Espera 1 segundos
+
+  digitalWrite(led_verm2, LOW); //Apaga o segundo led vermelho
+  delay(1500); //Espera 1,5 segundos
+
+  
 
 }
